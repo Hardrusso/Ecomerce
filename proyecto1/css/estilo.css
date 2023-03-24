@@ -1,0 +1,154 @@
+/* Importa una fuente de Google Fonts para usar en la página web */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,600&display=swap');
+
+/* Selecciona todos los elementos de la página web y establece un margen y un relleno de 0 y aplica la fuente 'Poppins' */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Establece la apariencia del encabezado */
+.header{
+    display: flex; /* Se trata de hacer que los elementos dentro de un contenedor se ajusten automáticamente según el ancho del contenedor y las propiedades que se hayan aplicado. */
+    justify-content: space-between; /* Se usa para centrar sus elementos horizontalmente */
+    align-items: center; /* Se usa para centrar sus elementos verticalmente */
+    background: rgba(128, 128, 128, 0.568); /* Establece un color de fondo semi-transparente para el encabezado */
+}
+
+/* Establece la apariencia del contenedor principal del encabezado */
+.cont1{
+    display: flex; /* Se trata de hacer que los elementos dentro de un contenedor se ajusten automáticamente según el ancho del contenedor y las propiedades que se hayan aplicado. */
+    justify-content: center; /* Se usa para centrar sus elementos horizontalmente */
+    align-items: center; /* Se usa para centrar sus elementos verticalmente */
+}
+
+/* Establece la apariencia de la imagen del logo */
+.cont1 img{
+    width: 120px; /* Establece el ancho de la imagen del logo */
+    padding: 15px; /* Establece un relleno alrededor de la imagen del logo */
+}
+
+/* Establece la apariencia del título principal */
+.cont1 h1{
+    color:rgb(139, 55, 2); /* Establece el color del texto del título principal */
+    
+}
+
+/* Establece la apariencia de los enlaces de la barra de navegación */
+.nav a{
+    text-decoration: none; /* Elimina la subrayado predeterminado de los enlaces */
+    color:rgb(139, 55, 2); /* Establece el color del texto de los enlaces */
+    padding: 10px 20px; /* Establece un relleno alrededor de los enlaces */
+    font-weight: bold; /* Establece el grosor de fuente en negrita */
+    font-size: 1.2em; /* Establece el tamaño de fuente en 1.2em (el 120% del tamaño de fuente predeterminado) */
+    cursor: pointer;
+}
+
+.nav a:hover{
+background: #ffffffa4;
+border-radius: 10px;
+}
+
+.container_cards{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin-top: 50px;
+margin-bottom: 80px;
+}
+.cards{
+    box-shadow:0.3px 0.5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.cards img{
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.cards h2{
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 2em;
+}
+.cards p{
+    text-align: center;
+    font-size: 1.5em;
+}
+.sub_cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sub_cards span{
+font-size: 1.3em;
+color: red;
+}
+.sub_cards button{
+    padding: 5px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background: rgb(139, 55, 2);;
+    color: #fff;
+    transition: all 0.3s;
+    
+}
+.sub_cards button:hover{
+    transform: scale(1.1);
+}
+
+.logos a img{
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: grey;
+    padding: 5px;
+    
+}
+.footer_titulo p{
+    color: #fff;
+}
+.logos{
+    margin-left: 30px;
+}
+
+@media (max-width:1024px){
+    .container_cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+        margin-bottom: 50px;
+    }
+
+    .cards img{
+        width: 250px;
+        height: 250px;
+        border-radius: 15px;
+    }
+    .nav a{
+        padding: 5px;
+    }
+    .cont1 h1{
+        font-size: 1.5em;
+    }
+    .cards h2{
+        font-size: 1.3em;
+    }
+    .cards p{
+        font-size: 1em;
+    }
+    .sub_cards span{
+        font-size: 1.2em;
+    }
+}
